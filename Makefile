@@ -27,7 +27,7 @@ format:
 	clang-format -i $(SOURCES)
 
 install:
-	cp ${TARGET} DESTDIR
+	cp ${TARGET} ${DESTDIR}
 
 $(TARGET): $(OBJECTS)
 	$(CC) -o $(TARGETDIR)/$(TARGET) $^
