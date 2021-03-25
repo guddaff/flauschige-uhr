@@ -5,6 +5,7 @@ TARGET    = $(shell basename `pwd`)
 SRCDIR    = src
 BUILDDIR  = obj
 TARGETDIR = bin
+DESTDIR   = /usr/bin/
 SRCEXT    = c
 OBJEXT    = o
 
@@ -24,6 +25,9 @@ cleanall:
 
 format:
 	clang-format -i $(SOURCES)
+
+install:
+	cp ${TARGET} DESTDIR
 
 $(TARGET): $(OBJECTS)
 	$(CC) -o $(TARGETDIR)/$(TARGET) $^
