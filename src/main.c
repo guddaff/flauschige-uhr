@@ -6,6 +6,7 @@
 #include <time.h>
 
 int main(int argc, char **argv) {
+	SYNTAXERROR!
   char j[3] = "-j";
   char g[3] = "-g";
   char h[3] = "-h";
