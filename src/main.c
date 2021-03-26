@@ -11,10 +11,10 @@ int main(int argc, char **argv) {
     char w[3] = "-w";
     char h[3] = "-h";
 
-    char *hours[] = {" zwölf",    "eins", "zwei", "drei", "vier", "fünf", "sechs",
+    char *hours[] = {"zwölf",    "eins", "zwei", "drei", "vier", "fünf", "sechs",
         "sieben", "acht", "neun", "zehn", "elf",  "zwölf"};
-    char *whours[] = {" zwölf",    "eins", "zwei", "dry", "vier", "fünf", "sechs",
-        "sieben", "acht", "neun", "zehn", "elf",  "zwölf"};
+    char *whours[] = {"zwölf",    "eins", "zwei", "dry", "vier", "fünf", "sechs",
+        "sieben", "acht", "neun", "zehn", "ülf",  "zwölf"};
     char *htmlhours[] = {" ",         "eins",  "zwei",      "drei", "vier",
         "f&uuml;nf", "sechs", "sieben",    "acht", "neun",
         "zehn",      "elf",   "zw&ouml;lf"};
