@@ -4,6 +4,8 @@ flauschige-uhr is a clone of the kde fuzzy-clock widget.
 
 ## Arguments:
 
-`-j`
+`-j` how jessic likes her time
 
-`-g`
+`-g` how guddaff likes his time
+
+`-w` how wucke likes his time
