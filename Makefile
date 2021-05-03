@@ -1,11 +1,12 @@
 CC       ?= clang
 CFLAGS   ?= -Wpedantic
+LDFLAGS   = --static
 TARGET    = $(shell basename `pwd`)
 
 SRCDIR    = src
 BUILDDIR  = obj
 TARGETDIR = bin
-DESTDIR   = /usr/bin/
+DESTDIR   = /usr/bin
 SRCEXT    = c
 OBJEXT    = o
 
@@ -27,10 +28,10 @@ format:
 	clang-format -i $(SOURCES)
 
 install:
-	cp ${TARGETDIR}/${TARGET} ${DESTDIR}
+	install -Dsm755  ${TARGETDIR}/${TARGET} ${DESTDIR}/${TARGET}
 
 $(TARGET): $(OBJECTS)
-	$(CC) -o $(TARGETDIR)/$(TARGET) $^
+	$(CC) -o $(TARGETDIR)/$(TARGET) $^ $(LDFLAGS)
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
 	$(CC) $(CFLAGS) -c -o $@ $<
