@@ -141,7 +141,7 @@ int main(int argc, char **argv) {
         printf("%s %s\n", jessica[midx], htmlhours[hnext]);
       }
     } else {
-      printf("\x1b[31m[ ERROR ] \x1b[0m Not a supportet argument.\n");
+      printf("\x1b[31m[ ERROR ] \x1b[0m Not a supported argument.\n");
     }
   } else if (argc > 2) {
     printf("\x1b[31m[ ERROR ] \x1b[0m Too many arguments supplied.\n");
